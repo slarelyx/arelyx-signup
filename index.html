@@ -110,7 +110,7 @@
             color: white;
             letter-spacing: 0.5px;
             opacity: 0.92;
-            line-height: 1.6;
+            line-height: 1.8;
             font-weight: 500;
         }
 
@@ -138,6 +138,23 @@
             font-size: 15px;
             color: #555;
             line-height: 1.5;
+        }
+
+        /* Early Bird Alert */
+        .early-bird-alert {
+            background: linear-gradient(135deg, #FFF9E6 0%, #FFFEF0 100%);
+            border-left: 5px solid #FFD700;
+            padding: 16px;
+            border-radius: 8px;
+            margin-bottom: 28px;
+            font-size: 14px;
+            color: #333;
+            line-height: 1.5;
+        }
+
+        .early-bird-alert strong {
+            color: #0000A0;
+            font-weight: 700;
         }
 
         /* Form Groups */
@@ -380,7 +397,7 @@
                 <div class="logo">奧臻 Arelyx</div>
                 <p class="presents">invites you to</p>
                 <h1>Think, Decide & Lead<br>in the AI Era</h1>
-                <p class="date-badge">Sunday, June 28, 2026<br>Hong Kong</p>
+                <p class="date-badge">Tuesday, June 23, 2026<br>or<br>Sunday, June 28, 2026<br>Hong Kong</p>
             </div>
         </div>
 
@@ -391,8 +408,30 @@
                 <p>An 8-hour intensive workshop for high-potential students (ages 13–18). Personalized assessments. Small cohort. Real outcomes.</p>
             </div>
 
+            <div class="early-bird-alert">
+                ⏰ <strong>Early Bird Signups End June 5, 2026.</strong>
+            </div>
+
             <form action="https://formspree.io/f/mlgzjwke" method="POST" accept-charset="UTF-8" enctype="application/x-www-form-urlencoded">
+                <!-- WORKSHOP DATE SELECTION -->
+                <div class="section-title">Select Your Workshop Date</div>
+
+                <div class="form-group">
+                    <label>Which date would you prefer? <span class="required">*</span></label>
+                    <div class="radio-group">
+                        <div class="radio-item">
+                            <input type="radio" id="dateJune23" name="Workshop Date" value="Tuesday, June 23, 2026" required>
+                            <label for="dateJune23"><strong>Tuesday, June 23, 2026</strong></label>
+                        </div>
+                        <div class="radio-item">
+                            <input type="radio" id="dateJune28" name="Workshop Date" value="Sunday, June 28, 2026">
+                            <label for="dateJune28"><strong>Sunday, June 28, 2026</strong></label>
+                        </div>
+                    </div>
+                </div>
+
                 <!-- STUDENT INFORMATION -->
+                <div class="section-divider"></div>
                 <div class="section-title">Student Information</div>
 
                 <div class="form-group two-column">
@@ -439,8 +478,8 @@
                     <label>Which pricing option? <span class="required">*</span></label>
                     <div class="radio-group">
                         <div class="radio-item">
-                            <input type="radio" id="pricingEarly" name="Pricing Tier" value="Early Bird - HKD 15,800 (before May 31)" required>
-                            <label for="pricingEarly"><strong>Early Bird: HKD 15,800</strong> (before May 31)</label>
+                            <input type="radio" id="pricingEarly" name="Pricing Tier" value="Early Bird - HKD 15,800 (before June 5)" required>
+                            <label for="pricingEarly"><strong>Early Bird: HKD 15,800</strong> (before June 5)</label>
                         </div>
                         <div class="radio-item">
                             <input type="radio" id="pricingStandard" name="Pricing Tier" value="Standard - HKD 18,800">
